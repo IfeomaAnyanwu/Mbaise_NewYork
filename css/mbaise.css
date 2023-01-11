@@ -397,9 +397,9 @@ hero for small screen
     margin: 0 2rem;
   }
 
-  .hero-banner h1 {
+  .hero-banner > h1 {
     text-transform: uppercase;
-    font-size: 0.3rem;
+    font-size: 5px;
     line-height: 2.8rem;
   }
 
