@@ -378,7 +378,7 @@ hero for small screen
 ===============
 
 */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .hero {
     background: linear-gradient(rgba(70, 17, 26, 0.7), rgba(70, 17, 26, 0.4)),
       url("/images/executive3.JPG");
