@@ -395,14 +395,14 @@ hero for small screen
     text-align: center;
     color: var(--clr-white);
     margin: 0 2rem;
-    display:flex;
-    flex-wrap:wrap;
   }
 
   .hero-banner > h1 {
     text-transform: uppercase;
     font-size: 1.5rem;
     line-height: 2.8rem;
+    flex-wrap:wrap;
+      text-align:center;
     
   }
 
