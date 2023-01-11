@@ -179,6 +179,17 @@ Navbar
   box-shadow: var(--dark-shadow);
   z-index: 2;
 }
+
+@media screen and (max-width: 768px) {
+  .nav-toggle {
+    margin-right: 60px;
+  }
+
+  .nav-header > img {
+    margin-left: 30px;
+  }
+}
+
 .nav-icons {
   display: none;
 }
@@ -236,7 +247,8 @@ Navbar
   gap: 2rem 1rem;
 }
 .show-links {
-  height: 280px;
+  height: 320px;
+  background: var(--clr-white);
 }
 @media screen and (min-width: 992px) {
   /* hide toggle button */
@@ -295,8 +307,8 @@ Hero
 */
 .hero {
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(153, 20, 42, 0.1)),
-    url("/images/picture 11.jpg");
+  background: linear-gradient(rgba(70, 17, 26, 0.7), rgba(70, 17, 26, 0.4)),
+    url("/images/executive3.JPG");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -314,6 +326,8 @@ Hero
 
 .hero-banner h1 {
   text-transform: uppercase;
+  line-height: 5rem;
+  letter-spacing: 5px;
 }
 
 .hero-banner p {
@@ -360,6 +374,50 @@ Hero
 
 /*
 =============== 
+hero for small screen 
+===============
+
+*/
+@media screen and (max-width: 768px) {
+  .hero {
+    background: linear-gradient(rgba(70, 17, 26, 0.7), rgba(70, 17, 26, 0.4)),
+      url("/images/executive3.JPG");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .hero-banner {
+    text-align: center;
+    color: var(--clr-white);
+    margin: 0 2rem;
+  }
+
+  .hero-banner h1 {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+  }
+
+  .hero-banner p {
+    min-width: 35rem;
+    color: var(--clr-gold-4);
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3rem;
+    -webkit-animation: move-text 15s infinite linear;
+    animation: move-text 15s infinite linear;
+  }
+}
+
+/*
+=============== 
 Plain background added by teacher, not necessary here.
 ===============
 @media screen and (min-width: 768px) {
@@ -377,11 +435,6 @@ Plain background added by teacher, not necessary here.
 
 */
 
-/*
-=============== 
-Testing section space
-===============
-*/
 /*
 =============== 
 About
@@ -464,7 +517,7 @@ Services
 
 .service-img:hover {
   box-shadow: transparent;
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 
 .service-text {
@@ -540,7 +593,7 @@ Featured Events
 }
 .event-card:hover {
   box-shadow: var(--dark-shadow);
-  transform: scale(1.5);
+  transform: scale(1.2);
   z-index: 1;
 }
 .event-img-container {
@@ -629,38 +682,31 @@ Contact
 */
 .contact {
   background: var(--clr-grey-10);
-  margin: 0 auto;
   border-top: 2px solid var(--clr-primary-9);
 }
 .contact-title {
   color: var(--clr-grey-5);
   margin: 0.2rem auto;
   text-align: center;
+  font-size: 1.5rem;
 }
-.contact-title p {
+
+.contact-title > h3 {
+  margin-bottom: 4rem;
+}
+
+.address > p,
+.email > p,
+.phone > p {
   color: var(--clr-primary-1);
   font-size: 1.2rem;
 }
-.contact-details {
-  display: flex;
-  align-items: center;
-  gap: 2rem 4rem;
-  text-align: center;
-  margin-top: 3rem;
-  flex-wrap: wrap;
-}
 
 @media screen and (min-width: 992px) {
-  .contact-center {
+  .contact-details {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .contact-form {
-    align-self: flex-start;
-    flex: 1 1 auto;
-    max-width: 100%;
-    padding-left: 2rem;
+    justify-content: space-evenly;
   }
 }
 
@@ -774,11 +820,7 @@ Footer
 
 .copyright-wrapper {
   background: var(--clr-primary-7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 0;
-  margin-right: 0;
+  text-align: center;
 }
 
 /*
