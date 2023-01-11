@@ -401,8 +401,9 @@ hero for small screen
     text-transform: uppercase;
     font-size: 1.5rem;
     line-height: 2.8rem;
-    flex-wrap:wrap;
-      text-align:center;
+     text-align:center;
+    margin-left: auto;
+    margin-right:auto;
     
   }
 
