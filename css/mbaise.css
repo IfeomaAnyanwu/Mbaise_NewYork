@@ -182,7 +182,7 @@ Navbar
 
 @media screen and (max-width: 768px) {
   .nav-toggle {
-    margin-right: 250px;
+    margin-right: 200px;
   }
 
   .nav-header > img {
@@ -399,7 +399,7 @@ hero for small screen
 
   .hero-banner h1 {
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 0.3rem;
     line-height: 2.8rem;
   }
 
